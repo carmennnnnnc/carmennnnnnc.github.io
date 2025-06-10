@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .phone-frame {
+      width: 393px;
+      background-color: #FFFCF3;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+        header {
+      background-color: #2A2A2A;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-left {
+      background: #FFFCF3;
+      color: #2A2A2A;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .header-right {
+      display: flex;
+      gap: 7px;
+    }
+
+    .circle {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 0.5px solid #FFFCF3;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .avatar-tuu {
+      background-image: url("./emily.jpg");
+    }
+
+    .avatar-jill {
+      background-image: url("./jill.jpg");
+    }
+
+    .avatar-yu {
+      background-image: url("./yu.jpg");
+    }
+
+    .avatar-car {
+      background-image: url("./carmen.jpg");
+    }
+
+    .line {
+        height: 3px;
+        width: auto;
+        background-color: black;
+    }
+
+    .shortline {
+        height: 3px;
+        width: 265px;
+        background-color: black;
+    }
+</style>
+
+<body>
+<div class="phone-frame">
+
+    <div style="height: 852px;
+    width: 393px;
+    background-color: #FFFCF3;
+    position: relative;
+    ">
+
+<header>
+    <div class="header-left"><strong>HELLOKITTY</strong></div>
+    <div class="header-right">
+      <div class="circle avatar-jill">
+      </div>
+      <div class="circle avatar-tuu">
+      </div>
+      <div class="circle avatar-yu">
+      </div>
+      <div class="circle avatar-car">
+      </div>
+    </div>
+  </header>
+
+
+        <img src="./出道照片.png" alt="出道照片！" style="height: 189px; 
+    width: 284px;
+    padding-top: 40px;
+    padding-left: 54px;
+    justify-content: center
+    ">
+
+        <div class="line" style="margin-top: 62px;"></div>
+
+        <p style="font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 15px;">成團經歷</p>
+
+        <!-- justify-content: center 水平置中 
+     border-radius: 做出圓角 
+
+     flex-direction: column: 元素直式排列（由上到下）。
+     justify-content: center: 垂直方向整體置中。
+     align-items: center: 水平方向置中。 -->
+
+        <div style="height: 188px;
+        width: 334px;
+        background-color: #D9D9D9;
+        display: flex;
+        justify-content: center; 
+        margin-left: 29px;
+        margin-top: 19px;
+        border-radius: 16px;
+        flex-direction: column;
+        align-items: center;
+        ">
+        <p style="font-size: 15px; line-height: 1.6; text-align: justify; margin: 0; padding-left: 27px; padding-right: 27px;">
+            歷經四年的密集培訓，四人女子團體<strong>「HELLOKITTY」</strong>終於在2025年6月7日閃耀出道。融合未來科技感與夢幻魅力，成員們各具特色，唱跳實力亦備受矚目。她們以強烈視覺風格與故事性舞台，重新定義Z世代音樂語言，宣告嶄新時代的女團誕生。
+        </p>
+        </div>
+
+        <div class="line" style="margin-top: 42px;"></div>
+
+        <!-- position: absolute: 可以在父層內自由定位
+     bottom: 0: 靠底部貼齊
+     left: 50% + transform: translateX(-50%): 水平置中 -->
+        <div style="height: 200px;
+    width: 3px;
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);"></div>
+
+        <div style="
+    position: absolute;
+    bottom: 28px;
+    left: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;"
+    onclick="window.location.href ='letter1.html'">
+            <p style="
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 22px 0;
+            text-align: center;">Before we debut</p>
+            <img src="./Before we debut！.JPG" style="height: 119px; width: 133px; object-fit: cover;">
+        </div>
+
+        <!-- 上，左，下，右 -->
+        <div style="
+        position: absolute;
+        bottom: 28px;
+        right: 28px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;"
+        onclick="window.location.href ='letter2.html'">
+            <p style="
+          font-size: 18px;
+          font-weight: bold;
+          margin: 0 0 22px 0;
+          text-align: center;
+        ">Five years later....</p>
+            <img src="./Five years later....png" style="height: 119px; width: 133px; object-fit: cover;">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

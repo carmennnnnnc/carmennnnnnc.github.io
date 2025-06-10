@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .div-letter {
+        height: auto;
+        width: 400px;
+        background-color: #D9D9D9;
+        display: flex;
+        justify-content: center;
+        border-radius: 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 20px;
+        /* 加這行，避免內容貼邊 */
+        /* margin-top: 24px; 如果你希望與上方內容拉開距離 */
+    }
+
+        /* 每一組emoji+線+字 */
+        .letter-all{
+        display: flex; /* 圖片、文字區塊可以橫向排列 */
+        align-items: flex-start; /* 讓所有子項目對齊上方，文字才會剛好靠著圖片頂端對齊 */
+        gap: 16px; /* 讓圖片和右邊那一塊 有空隙 */
+    }
+
+    .letter-word{
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .letterline {
+        height: 3px;
+        width: 291px;
+        background-color: black;
+    }
+
+    .letter-word-line{
+        display: flex;
+        flex-direction: column;
+        gap: 4px; /* 控制文字和橫線的距離 */
+    }
+
+    .letterimg {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 2px solid black;
+        object-fit: cover; /* 核心關鍵，不變形、等比例填滿、超出的部分裁掉 */
+    }
+    </style>
+
+<div class="div-letter">
+    <div class="letter-all">
+        <img class="letterimg" src="./emily.jpg">
+        <div class="letter-word-line">
+          <p class="letter-word">給大家表演一個仙女下凡</p>
+          <div class="letterline"></div>
+        </div>
+      </div>
+      <div class="letter-all">
+        <img class="letterimg" src="./jill.jpg">
+        <div class="letter-word-line">
+          <p class="letter-word">只要路是對的就不怕走遠</p>
+          <div class="letterline"></div>
+        </div>
+    </div>
+    <div class="letter-all">
+        <img class="letterimg" src="./carmen.jpg">
+        <div class="letter-word-line">
+          <p class="letter-word">越努力，越幸運</p>
+          <div class="letterline"></div>
+        </div>
+    </div>
+    <div class="letter-all">
+        <img class="letterimg" src="./yu.jpg">
+        <div class="letter-word-line">
+          <p class="letter-word">就...放手去追夢吧！你是最勇敢且最幸運的！</p>
+          <div class="letterline"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
