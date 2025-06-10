@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>女團選擇器</title>
+  <style>
+    body {
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .phone-frame {
+      width: 393px;
+      height: 852px;
+      background-color: #FFFCF3;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 40px 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      grid-gap: 30px;
+      justify-content: center;
+      align-items: center; 
+    }
+
+    .card {
+      width: 140px;
+      height: 180px;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      margin-top:50px
+    }
+
+    .card img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 140px;
+      height: 180px;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.8s ease;
+    }
+
+    .card .back {
+      opacity: 0;
+    }
+
+    .card.active .front {
+      opacity: 0;
+    }
+
+    .card.active .back {
+      opacity: 1;
+    }
+
+    .bottom-text {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: auto;
+      margin-bottom: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="phone-frame">
+    <h1>新生代女團</h1>
+
+    <div class="card-grid">
+        <div class="card" 
+             onmouseenter="flip(this)" 
+             onmouseleave="unflip(this)" 
+             onclick="window.location.href ='page1.html'">
+          <img class="front" src="Component 1.png" alt="front">
+          <img class="back" src="Component 1-1.JPEG" alt="back">
+        </div>
+      
+        <div class="card" 
+             onmouseenter="flip(this)" 
+             onmouseleave="unflip(this)" 
+             onclick="window.location.href='page2.html'">
+          <img class="front" src="Component 2.png" alt="front">
+          <img class="back" src="Component 2-1.jpg" alt="back">
+        </div>
+      
+        <div class="card" 
+             onmouseenter="flip(this)" 
+             onmouseleave="unflip(this)" 
+             onclick="window.location.href='page3.html'">
+          <img class="front" src="Component 3.png" alt="front">
+          <img class="back" src="Component 3-1.jpg" alt="back">
+        </div>
+      
+        <div class="card" 
+             onmouseenter="flip(this)" 
+             onmouseleave="unflip(this)" 
+             onclick="window.location.href='page4.html'">
+          <img class="front" src="Component 4.png" alt="front">
+          <img class="back" src="Component 4-1.jpg" alt="back">
+        </div>
+      </div>
+
+    <div class="bottom-text">Tap to Choose</div>
+  </div>
+
+  <script>
+    let currentlyFlipped = null;
+
+    function flip(card) {
+      // 先將其他卡片翻回去
+      if (currentlyFlipped && currentlyFlipped !== card) {
+        currentlyFlipped.classList.remove('active');
+      }
+
+      card.classList.add('active');
+      currentlyFlipped = card;
+    }
+
+    function unflip(card) {
+      card.classList.remove('active');
+      if (currentlyFlipped === card) {
+        currentlyFlipped = null;
+      }
+    }
+  </script>
+
+</body>
+</html>
