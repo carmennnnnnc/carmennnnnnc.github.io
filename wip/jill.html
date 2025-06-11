@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*第一張黃色底圖*/
+        .flex-container {
+            width: 393px;
+            height: 852px;
+            display: flex;
+            background-color: #FFEDAB;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        /*新生代女團框*/
+        .flex-item {
+            width: 393px;
+            height: 62px;
+            background-color: #75070C;
+            display: flex;
+
+        }
+
+        /*新生代女團文字*/
+        .flex-iem1 {
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            margin-top: 20px;
+            padding-left: 15px;
+        }
+
+        /*我的餐桌*/
+        .table-container {
+            margin-left: 4%;
+            margin-top: 10px;
+            font-size: 18px;
+            font-family: Noto Sans TC;
+            font-weight: bolder;
+            color: #75070C;
+        }
+
+        /*包三張餐廳照片*/
+        .box-row {
+            display: flex;
+            margin-top: 6px;
+            justify-content: space-around;
+        }
+
+        /*餐廳照片的長寬高相關設定*/
+        .box {
+            width: 105px;
+            height: 105px;
+            background-color: gray;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+        }
+
+        /*餐廳連結*/
+        .pretty-ren {
+            background-image: url(飪室.jpg);
+        }
+
+        /*餐廳連結*/
+        .pretty-vegan {
+            background-image: url(素還真.jpg);
+        }
+
+        /*餐廳連結*/
+        .pretty-sister {
+            background-image: url(蔬漫.jpeg);
+
+        }
+         /*包餐廳名字*/
+           .restaurant-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        /*餐廳名字文字設定*/
+        .restaurant {
+            font-family: Noto Sans TC;
+            font-weight: bolder;
+            font-size: 14px;
+            color: #75070C;
+
+        }
+
+        /*playlist文字*/
+        .playist-container {
+            margin-left: 12px;
+            margin-top: 28px;
+            font-size: 20px;
+            font-family: Abril Fatface;
+            font-weight: bolder;
+            color: #75070C;
+        }
+
+        /*album文字*/
+        .album-container {
+            margin-left: 12px;
+            margin-top: 3px;
+            font-size: 20px;
+            font-family: Abril Fatface;
+            font-weight: bolder;
+            color: #75070C;
+        }
+
+        /*包小時候三張照片*/
+        .box-row1 {
+            display: flex;
+            margin-top: 15px;
+            justify-content: space-around;
+        }
+
+        /*小時候照片的長寬高等設定*/
+        .box1 {
+            width: 105px;
+            height: 105px;
+            background-color: gray;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+
+        }
+
+        /*第一張小時候圖連結*/
+        .pretty-smallc1 {
+            background-image: url(張小1.jpg);
+        }
+
+        /*第二二張小時候圖連結*/
+        .pretty-smallc2 {
+            background-image: url(張小2.jpg);
+        }
+
+        /*第三張小時候圖連結*/
+        .pretty-smallc3 {
+            background-image: url(張小3.jpg);
+
+        }
+
+        /*包長大三張照片*/
+        .box-row2 {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+
+        /*長大照片的長寬高等設定*/
+        .box2 {
+            width: 105px;
+            height: 105px;
+            background-color: gray;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+
+        }
+
+        /*第一張長大圖連結*/
+        .pretty-bigc1 {
+            background-image: url(張大1.jpg);
+        }
+
+        /*第二張小時候圖連結*/
+        .pretty-bigc2 {
+            background-image: url(張大2.jpg);
+        }
+
+        /*第三張小時候圖連結*/
+        .pretty-bigc3 {
+            background-image: url(張大3.jpg);
+
+        }
+
+        /*底片紅色長方框*/
+        .old {
+            width: 393px;
+            height: 30px;
+            background-color: #75070C;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /*底片單一白色長方框*/
+        .music {
+            width: 30px;
+            height: 18px;
+            background-color: azure;
+            margin-top: 6px;
+            border-radius: 3px;
+
+        }
+
+        /*第二底片紅色長方框*/
+        .old1 {
+            width: 393px;
+            height: 30px;
+            background-color: #75070C;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        /*第二個底片單一白色長方框*/
+        .music1 {
+            width: 30px;
+            height: 18px;
+            background-color: white;
+            margin-top: 6px;
+            border-radius: 3px;
+
+        }
+        /*第二張黃色底圖*/
+        .flex-container1 {
+            width: 393px;
+            height: 852px;
+            display: flex;
+            background-color: #FFEDAB;
+            flex-direction: column;
+            padding: 0;
+            margin-top: 0%;
+        }
+
+        .taiwan-container {
+            position: relative;
+            margin-top: 30px;
+            margin-left: 65px;
+        }
+        /*杜地圖頭貼*/
+        .pretty1 {
+            position: absolute;
+            /* 可以自由移動位置 */
+            top: 90px;
+            left: 155px;
+            background-color: gray;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50px;
+            width: 60px;
+            height: 60px;
+            background-image: url(杜地圖.jpg);
+        }
+        /*余地圖頭貼*/
+        .pretty2 {
+            position: absolute;
+            top: 33%;
+            left: 210px;
+            background-color: gray;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50px;
+            width: 60px;
+            height: 60px;
+            background-image: url(余地圖.jpg);
+        }
+        /*陳地圖頭貼*/
+        .pretty3 {
+            position: absolute;
+            top: 45%;
+            left: 43%;
+            background-color: gray;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50px;
+            width: 60px;
+            height: 60px;
+            background-image: url(陳地圖.jpg);
+        }
+
+        .malaysia-container {
+            left: 5px;
+            margin-top: 20px;
+        }
+        /*張地圖頭貼*/
+         .pretty4 {
+            position: absolute;
+            top: 215%;
+            left: 12%;
+            background-color: gray;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50px;
+            width: 60px;
+            height: 60px;
+            background-image: url(張地圖.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="flex-iem1">新生代女團</div>
+        </div>
+        <div class="table-container">我的餐桌</div>
+
+        <div class="box-row">
+            <div class="box pretty-ren"></div>
+            <div class="box pretty-vegan"></div>
+            <div class="box pretty-sister"></div>
+        </div>
+
+        <div class="restaurant-container">
+                <div class="restaurant">飪室<br>台中勤美</div>
+          
+           
+                <div class="restaurant">素還真<br>台北木柵</div>
+          
+          
+                <div class="restaurant">蔬漫小姐<br>台北信義</div>
+          
+        </div>
+
+        <div class="playist-container">Playlist </div>
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/0BOJtUtNvFSz4RQDaIKOYX?utm_source=generator" width="100%"
+            height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="album-container">Album </div>
+        <div class="old">
+            <div class="music"></div>
+            <div class="music"></div>
+            <div class="music"></div>
+            <div class="music"></div>
+            <div class="music"></div>
+            <div class="music"></div>
+            <div class="music"></div>
+            <div class="music"></div>
+            <div class="music"></div>
+            <div class="music"></div>
+
+
+        </div>
+
+        <div class="box-row1">
+            <div class="box1 pretty-smallc1"></div>
+            <div class="box1 pretty-smallc2"></div>
+            <div class="box1 pretty-smallc3"></div>
+        </div>
+
+        <div class="old1">
+            <div class="music1"></div>
+            <div class="music1"></div>
+            <div class="music1"></div>
+            <div class="music1"></div>
+            <div class="music1"></div>
+            <div class="music1"></div>
+            <div class="music1"></div>
+            <div class="music1"></div>
+            <div class="music1"></div>
+            <div class="music1"></div>
+
+
+        </div>
+        <div class="box-row2">
+            <div class="box2 pretty-bigc1"></div>
+            <div class="box2 pretty-bigc2"></div>
+            <div class="box2 pretty-bigc3"></div>
+        </div>
+    </div>
+
+    <div class="flex-container1">
+        <div class="taiwan-container">
+            <img src="臺灣2.png">
+            <div class="pretty1"></div>
+            <div class="pretty2"></div>
+            <div class="pretty3"></div>
+        </div>
+        <div class="malaysia-container">
+            <img src="malaysia2.png">
+            <div class="pretty4">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
