@@ -486,13 +486,16 @@
             background-image: url(./jil.jpg);
             cursor: pointer;
         }
-    .Malaysia-container {
-            margin-left: 35px;
-            margin-top: 70px;
-            font-size: 24px;
-            font-family: Abril Fatface;
-            font-weight: bolder;
-            color: #75070C;
+    .malaysia-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Abril Fatface;
+    font-size: 28px;
+    font-weight: bold;
+    color: #75070C;
+    pointer-events: none;}
 
         .malaysia-container {
           position: relative;
@@ -515,6 +518,7 @@
             cursor: pointer;
         }
     .nextone-container {
+      position: absolute;
             margin-left: 12px;
             margin-top: 15px;
             font-size: 24px;
@@ -709,7 +713,7 @@
         </div>
         <!--地圖-->
         <div class="flex-container1">
-          
+          <div class="nextone-container">the next one</div>
             <div class="taiwan-container">
                 <img src="./taiwan.png">
                 <div class="pretty1";
@@ -727,8 +731,9 @@
           
             <div class="malaysia-container">
                 <img src="./malaysia.png">
+              <div class="malaysia-label">Malaysia</div>
                 <div class="pretty4";
-                onclick="window.location.href ='jil.html'"
+                onclick="window.location.href ='carmen.html'"
                 transition: opacity 1s ease>
     
     
