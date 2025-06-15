@@ -437,7 +437,7 @@
 
         .taiwan-container {
             position: relative;
-            margin-top: 30px;
+            margin-top: 33px;
             margin-left: 65px;
         }
         /*杜地圖頭貼*/
@@ -492,7 +492,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Abril Fatface;
-    font-size: 41px;
+    font-size: 36px;
     font-weight: bold;
     color: #75070C;
     pointer-events: none;}
@@ -517,14 +517,23 @@
             background-image: url(./car.jpg);
             cursor: pointer;
         }
+    @keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
     .nextone-container {
       position: absolute;
             margin-left: 12px;
-            margin-top: 15px;
+            margin-top: 18px;
             font-size: 24px;
             font-family: Abril Fatface;
             font-weight: bolder;
             color: #75070C;
+       animation: bounce 1s infinite ease-in-out;}
   </style>
 </head>
 
