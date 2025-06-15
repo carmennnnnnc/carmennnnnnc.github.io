@@ -486,6 +486,17 @@
             background-image: url(./jil.jpg);
             cursor: pointer;
         }
+    .malaysia-label {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-family: Abril Fatface;
+    font-size: 34px;
+    font-weight: bold;
+    color: #75070C;
+    pointer-events: none;}
+
 
         .malaysia-container {
           position: relative;
@@ -495,7 +506,7 @@
         /*張地圖頭貼*/
          .pretty4 {
             position: absolute;
-            top: 48%;
+            top: 60%;
             left: 45%;
             background-color: gray;
             background-repeat: no-repeat;
@@ -507,6 +518,24 @@
             background-image: url(./car.jpg);
             cursor: pointer;
         }
+    @keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+    .nextone-container {
+      position: absolute;
+            margin-left: 12px;
+            margin-top: 18px;
+            font-size: 24px;
+            font-family: Abril Fatface;
+            font-weight: bolder;
+            color: #75070C;
+       animation: bounce 1s infinite ease-in-out;}
+
   </style>
 </head>
 
@@ -699,6 +728,7 @@
         </div>
         <!--地圖-->
         <div class="flex-container1">
+          <div class="nextone-container">the next one</div>
             <div class="taiwan-container">
                 <img src="./taiwan.png">
                 <div class="pretty1";
@@ -713,6 +743,7 @@
                 transition: opacity 1s ease></div>
             </div>
             <div class="malaysia-container">
+              <div class="malaysia-label">M a l a y s i a</div>
                 <img src="./malaysia.png">
                 <div class="pretty4";
                 onclick="window.location.href ='carmen.html'"
